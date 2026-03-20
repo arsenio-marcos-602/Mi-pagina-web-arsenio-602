@@ -1,21 +1,43 @@
 h1 {
     color:black;
 }
+/*estilo general de la pagina*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color:blue;
     margin: 0;
     line-height: 1.6; 
 }
+/*encabezado*/
 header {
     background-color:blueviolet;
     color:brown;
     text-align: center;
     padding: 30px 20px;
 }
+/*menu de navegacion*/
 nav {
     background-color:aliceblue;
     text-align: center;
     padding: 12px;
 }
-nav a
+/*enlaces del menu*/
+nav a {
+    color:blueviolet;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+/*efecto al pasar el mouse*/
+nav a:hover {
+color:blanchedalmond;
+}
+/*secciones*/
+section {
+    background-color: aquamarine;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border border-radius: 8px;
+}
+/*imagenes*/
