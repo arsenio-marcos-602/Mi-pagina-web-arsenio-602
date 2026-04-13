@@ -1,6 +1,6 @@
-function mostrarmensaje "cuida a tus mascotas" {
+function mostrarmensaje ();
     let mensaje=document.getElementById("mensaje");
-}
+
 mensaje.innerHTML= "cuida y proteje a tus mascotas";
 mensaje.style.display="block";
 
