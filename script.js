@@ -1,4 +1,4 @@
-function mostrarmensaje (cuida a tus mascotas);
+function mostrarmensaje (cuida a tus mascotas) {
     let mensaje=document.getElementById("mensaje");
 
 mensaje.innerHTML= "cuida y proteje a tus mascotas";
@@ -9,4 +9,5 @@ setTimeout (c) => {
     mensaje.style.transfor="translatey(0)";
 },50);
 
+}
 }
