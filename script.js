@@ -6,7 +6,7 @@ mensaje.style.display = "block";
 
 setTimeout(() => {
     mensaje.style.opacity = "1";
-    mensaje.style.transfor = "translatey(0)";
+    mensaje.style.transfor = "translateY(0)";
 },50);
 
 }
