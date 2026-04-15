@@ -61,11 +61,11 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform o.15,background-color 0.35;
+    transition: transform o.1s,background-color 0.3s;
     }
     
-        button: active {
-            transform:scale (0.95);
+        button:active {
+            transform: scale(0.95);
             background-color: blue;
         }
     
