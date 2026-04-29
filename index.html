@@ -21,75 +21,7 @@
 
 
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Modo oscuro</title>
-
-<style>
-:root {
-  --bg: white;
-  --text: black;
-}
-
-/* Modo oscuro */
-body.dark {
-  --bg: #121212;
-  --text: white;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial;
-  transition: 0.3s;
-}
-
-/* Interruptor */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 24px;
-}
-
-.switch input {
-  opacity: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  background: #ccc;
-  border-radius: 24px;
-  top: 0; left: 0; right: 0; bottom: 0;
-}
-
-.slider:before {
-  content: "";
-  position: absolute;
-  height: 18px;
-  width: 18px;
-  left: 3px;
-  bottom: 3px;
-  background: white;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-input:checked + .slider {
-  background: #4CAF50;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-</style>
-</head>
+    
 
 <body>
 
@@ -100,17 +32,6 @@ input:checked + .slider:before {
   <span class="slider"></span>
 </label>
 
-<script>
-const toggle = document.getElementById('toggle');
-
-// cambiar modo
-toggle.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
-});
-</script>
-
-</body>
-</html>
 
 
 
@@ -119,49 +40,7 @@ toggle.addEventListener('change', () => {
 
 
 
-
- <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Botón Volver Arriba</title>
-
-<style>
-  body {
-    height: 2000px; /* Solo para probar scroll */
-    font-family: Arial, sans-serif;
-  }
-
-  #btnArriba {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 12px 16px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    display: none;
-    transition: opacity 0.3s;
-  }
-
-  #btnArriba:hover {
-    background-color: #555;
-  }
-</style>
-</head>
-
-<body>
-
-<button id="btnArriba" onclick="volverArriba()">↑</button>
-
-<script>
-  const btn = document.getElementById("btnArriba");
-
-
+ 
 
 
 
