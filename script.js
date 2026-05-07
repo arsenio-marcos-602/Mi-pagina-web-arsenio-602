@@ -3,13 +3,26 @@ function mostrarmensaje() {
 
     let mensaje = document.getElementById("mensaje");
 
-    mensaje.innerHTML = "Cuida y protege a tus mascotas";
-    mensaje.style.display = "block";
+    // SI ESTÁ OCULTO
+    if (mensaje.style.display === "none" || mensaje.style.display === "") {
 
-    setTimeout(() => {
-        mensaje.style.opacity = "1";
-        mensaje.style.transform = "translateY(0)";
-    }, 50);
+        mensaje.innerHTML = "Cuida y protege a tus mascotas";
+        mensaje.style.display = "block";
+
+        setTimeout(() => {
+            mensaje.style.opacity = "1";
+            mensaje.style.transform = "translateY(0)";
+        }, 50);
+
+    } else {
+
+        // OCULTAR
+        mensaje.style.opacity = "0";
+
+        setTimeout(() => {
+            mensaje.style.display = "none";
+        }, 300);
+    }
 }
 
 
@@ -18,13 +31,26 @@ function mostrarmensaje2() {
 
     let mensaje = document.getElementById("mensaje2");
 
-    mensaje.innerHTML = "¡Chismosooooooooo!";
-    mensaje.style.display = "block";
+    // SI ESTÁ OCULTO
+    if (mensaje.style.display === "none" || mensaje.style.display === "") {
 
-    setTimeout(() => {
-        mensaje.style.opacity = "1";
-        mensaje.style.transform = "translateY(0)";
-    }, 50);
+        mensaje.innerHTML = "¡Chismosooooooooo!";
+        mensaje.style.display = "block";
+
+        setTimeout(() => {
+            mensaje.style.opacity = "1";
+            mensaje.style.transform = "translateY(0)";
+        }, 50);
+
+    } else {
+
+        // OCULTAR
+        mensaje.style.opacity = "0";
+
+        setTimeout(() => {
+            mensaje.style.display = "none";
+        }, 300);
+    }
 }
 
 
