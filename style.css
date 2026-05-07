@@ -164,3 +164,36 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
+
+
+.btn-arriba {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.btn-arriba:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
