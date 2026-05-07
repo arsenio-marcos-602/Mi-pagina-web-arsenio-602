@@ -240,3 +240,50 @@ html {
 .acordeon-contenido p {
     padding: 15px 0;
 }
+
+
+
+
+/* =========================
+   CENTRO INTERACTIVO
+========================= */
+
+.botones-interactivos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.botones-interactivos button {
+    flex: 1;
+}
+
+/* CONTENIDO */
+.contenido-interactivo {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    animation: aparecer 0.5s ease;
+}
+
+/* ACTIVO */
+.contenido-interactivo.activo {
+    display: block;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

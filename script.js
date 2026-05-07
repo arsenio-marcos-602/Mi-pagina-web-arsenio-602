@@ -86,3 +86,24 @@ acordeonBtns.forEach((boton) => {
         }
     });
 });
+
+
+
+
+
+// CENTRO INTERACTIVO
+
+function mostrarContenido(id) {
+
+    // OCULTAR TODOS
+    const contenidos =
+        document.querySelectorAll(".contenido-interactivo");
+
+    contenidos.forEach((contenido) => {
+        contenido.classList.remove("activo");
+    });
+
+    // MOSTRAR EL SELECCIONADO
+    document.getElementById(id)
+        .classList.add("activo");
+}
