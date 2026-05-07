@@ -60,3 +60,29 @@ const toggle = document.getElementById("toggleDark");
 toggle.addEventListener("change", () => {
     document.body.classList.toggle("dark");
 });
+
+
+
+
+// ACORDEÓN FAQ
+
+const acordeonBtns = document.querySelectorAll(".acordeon-btn");
+
+acordeonBtns.forEach((boton) => {
+
+    boton.addEventListener("click", () => {
+
+        const contenido = boton.nextElementSibling;
+
+        // ABRIR O CERRAR
+        if (contenido.style.maxHeight) {
+
+            contenido.style.maxHeight = null;
+
+        } else {
+
+            contenido.style.maxHeight =
+                contenido.scrollHeight + "px";
+        }
+    });
+});
