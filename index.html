@@ -1,176 +1,74 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primera pagina web</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <header>
-      <h1>Mi Página Personal</h1>
-    </header>
-
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#sobre-el-pec">Proyecto PEC</a>
-    </nav>
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p id="mensaje2" style="display:none;"></p>
-      <button onclick="mostrarmensaje2()">mostrar mensaje</button>
-      <br><br>
-      <img src="img/Arsenio Gregorio Marcos Manuel.png" alt="foto personal" width="300" height="200">
-      <p>Información personal.</p>
-    </section>
-
-    
-
-    <section id="sobre-el-pec">
-      <h2>Sobre el proyecto pec</h2>
-      <p id="mensaje" style="display:none;"></p>
-      <button onclick="mostrarmensaje()">mostrar mensaje</button>
-      <br><br>
-      <img src="img/banner.png" alt="" width="300" height="200">
-      <p>proyecto pec.</p>
-    </section>
-
-    <a href="https://wa.me/521234567890" target="_blank" class="whatsapp-btn">
-  <svg viewBox="0 0 32 32" width="30" height="30">
-    <path fill="black" d="M19.11 17.34c-.27-.13-1.58-.78-1.83-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.05-.16.18-.31.2-.58.07-.27-.13-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.26s.97 2.61 1.11 2.79c.13.18 1.91 2.91 4.63 4.08.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.58-.65 1.8-1.28.22-.63.22-1.17.15-1.28-.07-.11-.25-.18-.52-.31z"/>
-  </svg>
-  </a>
-
-  <style>
-.whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 70px;
-  height: 70px;
-  background: radial-gradient(circle at 30% 30%, #4cff4c, #128C7E);
-  border-radius: 50%;
-  border: 4px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-  text-decoration: none;
-}
-
-.whatsapp-btn svg {
-  width: 35px;
-  height: 35px;
-}
-  </style>
-
-
-
-
-
-
-<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modo Oscuro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera página web</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: white;
-      color: black;
-      transition: 0.3s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .contenedor {
-      text-align: center;
-    }
-
-    /* Modo oscuro */
-    body.dark {
-      background: #121212;
-      color: white;
-    }
-
-    /* Interruptor */
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 60px;
-      height: 34px;
-      margin-top: 20px;
-    }
-
-    .switch input {
-      display: none;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      inset: 0;
-      background-color: #ccc;
-      transition: .4s;
-      border-radius: 34px;
-    }
-
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background: white;
-      transition: .4s;
-      border-radius: 50%;
-    }
-
-    input:checked + .slider {
-      background-color: #2196F3;
-    }
-
-    input:checked + .slider:before {
-      transform: translateX(26px);
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Mi Página Personal</h1>
+  </header>
+
+  <!-- MENÚ -->
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#sobre-el-pec">Proyecto PEC</a>
+  </nav>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+
+    <p id="mensaje2" class="mensaje"></p>
+
+    <button onclick="mostrarmensaje2()">
+      Mostrar mensaje
+    </button>
+
+    <br><br>
+
+    <img
+      src="img/Arsenio Gregorio Marcos Manuel.png"
+      alt="Foto personal"
+      width="300"
+      height="200"
+    >
+
+    <p>Información personal.</p>
+  </section>
+
+  <!-- PROYECTO PEC -->
+  <section id="sobre-el-pec">
+    <h2>Sobre el proyecto PEC</h2>
+
+    <p id="mensaje" class="mensaje"></p>
+
+    <button onclick="mostrarmensaje()">
+      Mostrar mensaje
+    </button>
+
+    <br><br>
+
+    <img
+      src="img/banner.png"
+      alt="Banner del proyecto"
+      width="300"
+      height="200"
+    >
+
+    <p>Proyecto PEC.</p>
+  </section>
+
+  <!-- MODO OSCURO -->
   <div class="contenedor">
-    <h1>Modo Oscuro</h1>
+    <h2>Modo Oscuro</h2>
 
     <label class="switch">
       <input type="checkbox" id="toggleDark">
@@ -178,34 +76,26 @@
     </label>
   </div>
 
+  <!-- BOTÓN WHATSAPP -->
+  <a
+    href="https://wa.me/5215512345678"
+    target="_blank"
+    class="whatsapp-btn"
+  >
+    <svg viewBox="0 0 32 32">
+      <path fill="black"
+        d="M19.11 17.34c-.27-.13-1.58-.78-1.83-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.05-.16.18-.31.2-.58.07-.27-.13-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.26s.97 2.61 1.11 2.79c.13.18 1.91 2.91 4.63 4.08.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.58-.65 1.8-1.28.22-.63.22-1.17.15-1.28-.07-.11-.25-.18-.52-.31z"
+      />
+    </svg>
+  </a>
 
+  <!-- PIE -->
+  <footer>
+    <p>2026 - Mi nombre</p>
+  </footer>
 
-
-
-
-
-  <script>
-    const toggle = document.getElementById("toggleDark");
-
-    toggle.addEventListener("change", () => {
-      document.body.classList.toggle("dark");
-    });
-  </script>
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
-</html>
-
-
-
-
-
- <footer>
-      <p>2026 - Mi nombre</p>
-    </footer>
-
-    <a href="https://wa.me/5215512345678" target="_blank">
-  Enviar mensaje por WhatsApp
-</a>
-    <script src="script.js"></script>
-  </body>
 </html>

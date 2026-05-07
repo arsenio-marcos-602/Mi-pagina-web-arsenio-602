@@ -1,71 +1,166 @@
-h1 {
-    color:black;
-}
-/*estilo general de la pagina*/
+/* ESTILO GENERAL */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:blueviolet;
+    background-color: blueviolet;
     margin: 0;
-    line-height: 1.6; 
+    line-height: 1.6;
+    color: black;
+    transition: 0.3s;
 }
-/*encabezado*/
+
+/* MODO OSCURO */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* ENCABEZADO */
 header {
-    background-color:blueviolet;
-    color:brown;
+    background-color: blueviolet;
+    color: brown;
     text-align: center;
     padding: 30px 20px;
 }
-/*menu de navegacion*/
+
+/* TÍTULOS */
+h1, h2 {
+    margin: 0;
+}
+
+/* MENÚ */
 nav {
-    background-color:aliceblue;
+    background-color: aliceblue;
     text-align: center;
     padding: 12px;
 }
-/*enlaces del menu*/
+
+/* ENLACES */
 nav a {
-    color:blueviolet;
+    color: blueviolet;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
-/*efecto al pasar el mouse*/
+
 nav a:hover {
-color:blanchedalmond;
+    color: blanchedalmond;
 }
-/*secciones*/
+
+/* SECCIONES */
 section {
-    background-color:brown;
+    background-color: brown;
     margin: 20px auto;
     padding: 20px;
     width: 80%;
     border-radius: 8px;
+    color: white;
 }
-/*imagenes*/
+
+/* IMÁGENES */
 img {
     border-radius: 10px;
     margin-top: 10px;
 }
-/*pie de pagina*/
+
+/* FOOTER */
 footer {
     background-color: antiquewhite;
-    color:beige;
+    color: black;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 
+/* BOTONES */
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color:black;
-    color:aliceblue;
+    background-color: black;
+    color: aliceblue;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform o.1s,background-color 0.3s;
-    }
-    
-        button:active {
-            transform: scale(0.95);
-            background-color: blue;
-        }
-    
+    transition: transform 0.1s, background-color 0.3s;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: blue;
+}
+
+/* MENSAJES */
+.mensaje {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle at 30% 30%, #4cff4c, #128C7E);
+    border-radius: 50%;
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    text-decoration: none;
+}
+
+.whatsapp-btn svg {
+    width: 35px;
+    height: 35px;
+}
+
+/* CONTENEDOR MODO OSCURO */
+.contenedor {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
